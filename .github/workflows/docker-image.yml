@@ -25,4 +25,4 @@ jobs:
       run: docker build . --file Dockerfile --tag vreact_app:$(date +%s)
 
     - name : Docker Push
-      run : docker push ${{secreats.DOCKER_USER}}/prajwal1718/vreact_hello
+      run : docker push ${{secrets.DOCKER_USER}}/prajwal1718/vreact_hello
