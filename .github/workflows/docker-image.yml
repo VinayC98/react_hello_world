@@ -22,7 +22,7 @@ jobs:
            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag prajwal1718/vin_react_app:latest
+      run: docker build --file Dockerfile --tag prajwal1718/vin_react_app:latest .
    
    # - name: Docker image tag
    #   run: docker tag vreact_app prajwal1718/vin_react_app:latest
