@@ -25,7 +25,7 @@ jobs:
       run: docker build . --file Dockerfile --tag vreact_app:$(date +%s)
 
     - name : Docker image tag
-      run: docker tag vin_react_app vreact_app:latest
+      run: docker tag vin_react_app vreact_app:$(date +%s)
       
     - name : Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/vin_react_app/vreact_app:latest
+      run: docker push ${{secrets.DOCKER_USER}}/vin_react_app/vreact_app:$(date +%s)
