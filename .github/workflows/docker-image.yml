@@ -28,4 +28,4 @@ jobs:
      # run: docker tag vreact_app:$(date +%s) vin_react_app:$(date +%s)
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/vreact_app:$(date +%s)
+      run: docker push ${{secrets.DOCKER_USER}}vreact_app:$(date +%s)
