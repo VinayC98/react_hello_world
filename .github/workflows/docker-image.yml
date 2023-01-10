@@ -17,8 +17,8 @@
 
               with:
 
-                DOCKER_USER: ${{secrets.DOCKER_USER}}
-                DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+               username : ${{secrets.DOCKER_USER}}
+               password : ${{secrets.DOCKER_PASSWORD}}
                 
 
             - name: Build and push to Docker Hub
