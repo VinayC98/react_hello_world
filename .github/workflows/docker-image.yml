@@ -22,13 +22,13 @@ jobs:
            docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     
     - name: Build the Docker image
-      run: docker build --file Dockerfile --tag prajwal1718/vin_react_app:latest .
+      run: docker build --file Dockerfile --tag prajwal1718/v_react_app:latest .
    
    # - name: Docker image tag
    #   run: docker tag vreact_app prajwal1718/vin_react_app:latest
  # run: docker tag vreact_app:$(date +%s) vin_react_app:$(date +%s)
       
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}prajwal1718/vin_react_app:latest
+      run: docker push ${{secrets.DOCKER_USER}}/prajwal1718/v_react_app:latest
            
 
