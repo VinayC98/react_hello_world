@@ -1,6 +1,6 @@
     on: push
     jobs:
-        build-container:
+        build-image:
             name: Build container
             runs-on: ubuntu-latest
 
@@ -17,7 +17,7 @@
                 with:
                   push: true
                   image: ./Dockerfile
-                  tags: ghcr.io/vincy/hello_react:latest
+                  tags: ghcr.io/vinayc98/hello_react:latest
  
 #            steps:
 #            - name: Checkout code
