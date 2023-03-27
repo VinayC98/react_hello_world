@@ -1,5 +1,8 @@
-    on: push
-    jobs:
+ on:
+   push:
+     branches:
+       - main
+ jobs:
         build-image:
             name: Build container
             runs-on: ubuntu-latest
